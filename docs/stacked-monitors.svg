@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="352" viewBox="0 0 960 352" role="img" aria-labelledby="title description">
+  <title id="title">A 16:9 game on a 32:9 monitor</title>
+  <desc id="description">The same 2560 by 1440 game on a 5120 by 1440 display with a second screen above it. Left: with the picture aligned to the bottom of the ultrawide, the title bar extends onto the upper screen. Right: removing the frame keeps the entire game on the lower screen.</desc>
+  <style>
+    text { font-family: "Segoe UI", Arial, sans-serif; }
+    .heading { font-size: 21px; font-weight: 600; fill: #f2f7fa; }
+    .screen { fill: #213747; stroke: #74909f; stroke-width: 2; }
+    .upper-label { font-size: 14px; fill: #c1d1d9; }
+    .game-label { font-size: 20px; font-weight: 600; fill: #e4fff7; }
+    .note { font-size: 16px; fill: #e1ebf0; }
+    .small { font-size: 12px; fill: #aec4cf; }
+  </style>
+  <rect width="960" height="352" rx="14" fill="#122431"/>
+  <path d="M480 22V308" stroke="#355060"/>
+  <g text-anchor="middle">
+    <text class="heading" x="240" y="35">Windowed</text>
+    <text class="heading" x="720" y="35">With Borderless Game Window</text>
+    <g id="framed">
+      <rect class="screen" x="101" y="53" width="269" height="112" rx="3"/>
+      <rect class="screen" x="40" y="166" width="400" height="112" rx="3"/>
+      <text class="upper-label" x="236" y="108">Upper monitor</text>
+      <rect x="137" y="149" width="206" height="131" fill="#b86e47" stroke="#ffc59c" stroke-width="2"/>
+      <path d="M138 150H342V165H138Z" fill="#ffe2c9"/>
+      <path d="M321 156h5m7-2 5 5m0-5-5 5" fill="none" stroke="#784a33" stroke-width="1.6"/>
+      <rect x="140" y="166" width="200" height="112" fill="#21665e"/>
+      <text class="game-label" x="240" y="230">2560 × 1440</text>
+      <text class="note" x="240" y="308">The title bar reaches the upper screen.</text>
+    </g>
+    <g id="borderless">
+      <rect class="screen" x="581" y="53" width="269" height="112" rx="3"/>
+      <rect class="screen" x="520" y="166" width="400" height="112" rx="3"/>
+      <text class="upper-label" x="716" y="108">Upper monitor</text>
+      <rect x="620" y="166" width="200" height="112" fill="#21665e"/>
+      <text class="game-label" x="720" y="230">2560 × 1440</text>
+      <text class="note" x="720" y="308">The game fits the height of the ultrawide.</text>
+    </g>
+    <text class="small" x="480" y="336">5120 × 1440 lower display · Window frame enlarged for clarity</text>
+  </g>
+</svg>
